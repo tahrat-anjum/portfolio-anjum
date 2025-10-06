@@ -34,8 +34,8 @@ const socialLinks = [
     subText: "@Viper.TahratAnjum",
     icon: Facebook,
     // url: "https://www.facebook.com/Viper.TahratAnjum",
-    color: "#FF0000",
-    gradient: "from-[#FF0000] to-[#CC0000]"
+    color: "#1877F2",
+gradient: "from-[#1877F2] to-[#145DBF]",
   },
   {
     name: "GitHub",
