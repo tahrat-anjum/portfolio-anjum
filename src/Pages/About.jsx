@@ -126,7 +126,7 @@ const StatCard = memo(
 const AboutPage = () => {
   // Memoized calculations
   const { totalProjects, totalCertificates, YearExperience } = useMemo(() => {
-    const storedProjects = JSON.parse(localStorage.getItem("projects") || "[]");
+    const storedProjects = JSON.parse(localStorage. get Item("projects") || "[]");
     const storedCertificates = JSON.parse(
       localStorage.getItem("certificates") || "[]"
     );
@@ -179,7 +179,7 @@ const AboutPage = () => {
         icon: Code,
         color: "from-[#6366f1] to-[#a855f7]",
         value: totalProjects,
-        label: "Total Projects",
+        label: "Service",
         description: "Innovative web solutions crafted",
         animation: "fade-right",
       },
