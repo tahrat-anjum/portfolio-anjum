@@ -22,16 +22,16 @@ const socialLinks = [
   {
     name: "Instagram",
     displayName: "Instagram",
-    subText: "@ekizr_",
+    subText: "@Tahrat_Anjum",
     icon: Instagram,
     url: "https://www.instagram.com/tahrat_anjum",
     color: "#E4405F",
     gradient: "from-[#833AB4] via-[#E4405F] to-[#FCAF45]"
   },
   {
-    name: "YouTube",
-    displayName: "Youtube",
-    subText: "@eki zulfar",
+    name: "Facebook",
+    displayName: "Facebbok",
+    subText: "@Viper.TahratAnjum",
     icon: Facebook,
     // url: "https://www.facebook.com/Viper.TahratAnjum",
     color: "#FF0000",
