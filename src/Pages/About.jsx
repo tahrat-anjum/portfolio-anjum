@@ -126,7 +126,7 @@ const StatCard = memo(
 const AboutPage = () => {
   // Memoized calculations
   const { totalProjects, totalCertificates, YearExperience } = useMemo(() => {
-    const storedProjects = JSON.parse(localStorage. getItem("") || "[]");
+    const storedProjects = JSON.parse(localStorage. getItem("") ||);
     const storedCertificates = JSON.parse(
       localStorage.getItem("certificates") || "[]"
     );
