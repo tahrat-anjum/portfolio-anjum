@@ -13,7 +13,7 @@ const socialLinks = [
     displayName: "Let's Connect",
     subText: "on LinkedIn",
     icon: Linkedin,
-    url: "https://www.linkedin.com/",
+    url: "https://www.linkedin.com/in/badass-gametube-0a2044366/",
     color: "#0A66C2",
     gradient: "from-[#0A66C2] to-[#0077B5]",
     isPrimary: true
@@ -23,7 +23,7 @@ const socialLinks = [
     displayName: "Instagram",
     subText: "@ekizr_",
     icon: Instagram,
-    url: "https://www.instagram.com/",
+    url: "https://www.instagram.com/tahrat_anjum",
     color: "#E4405F",
     gradient: "from-[#833AB4] via-[#E4405F] to-[#FCAF45]"
   },
@@ -31,24 +31,24 @@ const socialLinks = [
     name: "YouTube",
     displayName: "Youtube",
     subText: "@eki zulfar",
-    icon: Youtube,
-    // url: "https://www.youtube.com/@",
+    icon: Facebook,
+    // url: "https://www.facebook.com/Viper.TahratAnjum",
     color: "#FF0000",
     gradient: "from-[#FF0000] to-[#CC0000]"
   },
   {
     name: "GitHub",
     displayName: "Github",
-    subText: "@EkiZR",
+    subText: "@tahrat-anjum",
     icon: Github,
-    // url: "",
+    // url: "https://github.com/tahrat-anjum",
     color: "#ffffff",
     gradient: "from-[#333] to-[#24292e]"
   },
   {
     name: "TikTok",
     displayName: "Tiktok",
-    subText: "@eki_zulfar",
+    subText: "@Tahrat_Anjum",
     icon: ({ className, ...props }) => (
      <svg width="24px" height="24px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Tiktok</title>
@@ -61,7 +61,7 @@ const socialLinks = [
     </g>
 </svg>
     ),
-    url: "https://tiktok.com/",
+    url: "https://tiktok.com/tahrat_anjum",
     color: "black",
     gradient: "from-[#000000] via-[#25F4EE] to-[#FE2C55]"
   }
