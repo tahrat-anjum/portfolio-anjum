@@ -17,7 +17,7 @@ export default defineConfig({
             if (id.includes('lottiefiles')) {
               return 'lottie-vendor'
             }
-            // Add more libs if needed
+            // Add other vendor chunks as needed
             return 'vendor'
           }
         }
