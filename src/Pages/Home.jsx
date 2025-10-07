@@ -94,11 +94,12 @@ const SocialLink = memo(({ icon: Icon, link }) => (
 const TYPING_SPEED = 100;
 const ERASING_SPEED = 50;
 const PAUSE_DURATION = 2000;
-const WORDS = ["Digital Security Enthusiast", "Social Media Security Analyst"];
+const WORDS = ["Network & Telecom Student", "Tech Enthusiast"];
+const TECH_STACK = ["React", "Javascript", "Node.js", "Tailwind"];
 const SOCIAL_LINKS = [
-  { icon: Github, link: "https://www.facebook.com/Viper.TahratAnjum" },
-  { icon: Linkedin, link: "https://www.linkedin.com/in/tahrat-anjum" },
-  { icon: Instagram, link: "https://www.instagram.com/tahrat_anjum" },
+  { icon: Github, link: "https://github.com/ankitpathak62" },
+  { icon: Linkedin, link: "https://www.linkedin.com/in/ankitpathak62/" },
+  { icon: Instagram, link: "https://www.instagram.com/sunfiresensei/" },
 ];
 
 const Home = () => {
@@ -210,7 +211,8 @@ const Home = () => {
                   data-aos="fade-up"
                   data-aos-delay="1000"
                 >
-                  Protecting Digital Identities through Secure and Responsible Social Media Practices.
+                  Menciptakan Website Yang Inovatif, Fungsional, dan
+                  User-Friendly untuk Solusi Digital.
                 </p>
 
                 {/* Tech Stack */}
