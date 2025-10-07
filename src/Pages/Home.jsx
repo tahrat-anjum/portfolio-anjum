@@ -94,11 +94,11 @@ const SocialLink = memo(({ icon: Icon, link }) => (
 const TYPING_SPEED = 100;
 const ERASING_SPEED = 50;
 const PAUSE_DURATION = 2000;
-const WORDS = ["Network & Telecom Student", "Tech Enthusiast"];
+const WORDS = ["Digital Security Enthusiast", "Social Media Security Analyst", "Network & InfoSec Learner"];
 const SOCIAL_LINKS = [
-  { icon: Github, link: "https://github.com/ankitpathak62" },
-  { icon: Linkedin, link: "https://www.linkedin.com/in/ankitpathak62/" },
-  { icon: Instagram, link: "https://www.instagram.com/sunfiresensei/" },
+  { icon: Facebook, link: "https://www.facebook.com/Viper.TahratAnjum" },
+  { icon: Linkedin, link: "https://www.linkedin.com/in/tahrat-anjum" },
+  { icon: Instagram, link: "https://www.instagram.com/tahrat_anjum" },
 ];
 
 const Home = () => {
