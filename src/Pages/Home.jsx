@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback, memo } from "react";
 import {
   Github,
   Linkedin,
+  Facebook,
   Mail,
   ExternalLink,
   Instagram,
@@ -210,8 +211,7 @@ const Home = () => {
                   data-aos="fade-up"
                   data-aos-delay="1000"
                 >
-                  Menciptakan Website Yang Inovatif, Fungsional, dan
-                  User-Friendly untuk Solusi Digital.
+                  Protecting Digital Identities through Secure and Responsible Social Media Practices.
                 </p>
 
                 {/* Tech Stack */}
