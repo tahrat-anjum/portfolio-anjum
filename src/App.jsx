@@ -1,53 +1,54 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import React, { useState } from 'react';
+import React, { useState, lazy, Suspense } from 'react';
 import "./index.css";
-import Home from "./Pages/Home";
-import About from "./Pages/About";
+
 import AnimatedBackground from "./components/Background";
 import Navbar from "./components/Navbar";
-import Portofolio from "./Pages/Portofolio";
-import ContactPage from "./Pages/Contact";
-import ProjectDetails from "./components/ProjectDetail";
-import WelcomeScreen from "./Pages/WelcomeScreen";
 import { AnimatePresence } from 'framer-motion';
+
+// Lazy load pages
+const Home = lazy(() => import("./Pages/Home"));
+const About = lazy(() => import("./Pages/About"));
+const Portofolio = lazy(() => import("./Pages/Portofolio"));
+const ContactPage = lazy(() => import("./Pages/Contact"));
+const ProjectDetails = lazy(() => import("./components/ProjectDetail"));
+const WelcomeScreen = lazy(() => import("./Pages/WelcomeScreen"));
 
 const LandingPage = ({ showWelcome, setShowWelcome }) => {
   return (
-    <>
-      <AnimatePresence mode="wait">
-        {showWelcome && (
+    <AnimatePresence mode="wait">
+      <Suspense fallback={<div className="text-white text-center mt-10">Loading...</div>}>
+        {showWelcome ? (
           <WelcomeScreen onLoadingComplete={() => setShowWelcome(false)} />
+        ) : (
+          <>
+            <Navbar />
+            <AnimatedBackground />
+            <Home />
+            <About />
+            <Portofolio />
+            <ContactPage />
+            <footer>
+              <center>
+                <hr className="my-3 border-gray-400 opacity-15 sm:mx-auto lg:my-6 text-center" />
+                <span className="block text-sm pb-4 text-gray-500 text-center dark:text-gray-400">
+                  © 2025{" "}
+                  <a href="https://flowbite.com/" className="hover:underline">
+                    VIPER IT
+                  </a>
+                  . All Rights Reserved.
+                </span>
+              </center>
+            </footer>
+          </>
         )}
-      </AnimatePresence>
-
-      {!showWelcome && (
-        <>
-          <Navbar />
-          <AnimatedBackground />
-          <Home />
-          <About />
-          <Portofolio />
-          <ContactPage />
-          <footer>
-            <center>
-              <hr className="my-3 border-gray-400 opacity-15 sm:mx-auto lg:my-6 text-center" />
-              <span className="block text-sm pb-4 text-gray-500 text-center dark:text-gray-400">
-                © 2025{" "}
-                <a href="https://flowbite.com/" className="hover:underline">
-                  VIPER IT
-                </a>
-                . All Rights Reserved.
-              </span>
-            </center>
-          </footer>
-        </>
-      )}
-    </>
+      </Suspense>
+    </AnimatePresence>
   );
 };
 
 const ProjectPageLayout = () => (
-  <>
+  <Suspense fallback={<div className="text-white text-center mt-10">Loading Project...</div>}>
     <ProjectDetails />
     <footer>
       <center>
@@ -61,7 +62,7 @@ const ProjectPageLayout = () => (
         </span>
       </center>
     </footer>
-  </>
+  </Suspense>
 );
 
 function App() {
