@@ -211,8 +211,7 @@ const Home = () => {
                   data-aos="fade-up"
                   data-aos-delay="1000"
                 >
-                  Menciptakan Website Yang Inovatif, Fungsional, dan
-                  User-Friendly untuk Solusi Digital.
+                  Restoring Access, Building Trust, and Protecting Your Online Identity.
                 </p>
 
                 {/* Tech Stack */}
