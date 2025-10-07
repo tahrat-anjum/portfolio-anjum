@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback, memo } from "react";
 import {
   Github,
+  Facebook,
   Linkedin,
   Mail,
   ExternalLink,
@@ -97,7 +98,7 @@ const PAUSE_DURATION = 2000;
 const WORDS = ["Digital Security Enthusiast", "Brand Protection Consultant", "Account Recovery Expertt"];
 const TECH_STACK = ["React", "Javascript", "Node.js", "Tailwind"];
 const SOCIAL_LINKS = [
-  { icon: Github, link: "https://github.com/tahrat-anjum" },
+  { icon: Facebook, link: "https://www.facebook.com/Viper.TahratAnjum" },
   { icon: Linkedin, link: "https://www.linkedin.com/in/tahrat-anjum/" },
   { icon: Instagram, link: "https://www.instagram.com/Tahrat_Anjum" },
 ];
