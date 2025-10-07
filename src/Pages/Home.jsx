@@ -95,7 +95,7 @@ const SocialLink = memo(({ icon: Icon, link }) => (
 const TYPING_SPEED = 100;
 const ERASING_SPEED = 50;
 const PAUSE_DURATION = 2000;
-const WORDS = ["Digital Security Enthusiast", "Brand Protection Consultant", "Account Recovery Expertt"];
+const WORDS = ["Digital Security Enthusiast", "Brand Protection Consultant", "Account Recovery Expert"];
 const TECH_STACK = ["Trust", "Secure", "Growth", "Protect"];
 const SOCIAL_LINKS = [
   { icon: Facebook, link: "https://www.facebook.com/Viper.TahratAnjum" },
