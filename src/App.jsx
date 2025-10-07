@@ -17,7 +17,7 @@ const ProjectDetails = lazy(() => import("./components/ProjectDetail"));
 const LandingPage = () => {
   return (
     <AnimatePresence mode="wait">
-      <Suspense fallback={<div className="text-white text-center mt-10">Loading...</div>}>
+      <Suspense fallback={<div className="text-white text-center mt-10">Preparing something lovely...</div>}>
         <>
           <Navbar />
           <AnimatedBackground />
@@ -44,7 +44,7 @@ const LandingPage = () => {
 };
 
 const ProjectPageLayout = () => (
-  <Suspense fallback={<div className="text-white text-center mt-10">Loading Project...</div>}>
+  <Suspense fallback={<div className="text-white text-center mt-10">Preparing something lovely...</div>}>
     <ProjectDetails />
     <footer>
       <center>
