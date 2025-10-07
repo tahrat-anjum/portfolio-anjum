@@ -2,7 +2,6 @@ import React, { useState, useEffect, useCallback, memo } from "react";
 import {
   Github,
   Linkedin,
-  Facebook,
   Mail,
   ExternalLink,
   Instagram,
@@ -97,7 +96,7 @@ const ERASING_SPEED = 50;
 const PAUSE_DURATION = 2000;
 const WORDS = ["Digital Security Enthusiast", "Social Media Security Analyst"];
 const SOCIAL_LINKS = [
-  { icon: Facebook, link: "https://www.facebook.com/Viper.TahratAnjum" },
+  { icon: Github, link: "https://www.facebook.com/Viper.TahratAnjum" },
   { icon: Linkedin, link: "https://www.linkedin.com/in/tahrat-anjum" },
   { icon: Instagram, link: "https://www.instagram.com/tahrat_anjum" },
 ];
