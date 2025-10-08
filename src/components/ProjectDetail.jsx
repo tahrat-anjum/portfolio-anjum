@@ -59,20 +59,11 @@ const ProjectStats = ({ project }) => {
         <div className="bg-blue-500/20 p-1.5 md:p-2 rounded-full">
           <Code2 className="text-blue-300 w-4 h-4 md:w-6 md:h-6" strokeWidth={1.5} />
         </div>
-        <div className="flex-grow">
-          <div className="text-lg md:text-xl font-semibold text-blue-200">{techStackCount}</div>
-          <div className="text-[10px] md:text-xs text-gray-400">Total Teknologi</div>
-        </div>
       </div>
 
       <div className="relative z-10 flex items-center space-x-2 md:space-x-3 bg-white/5 p-2 md:p-3 rounded-lg border border-purple-500/20 transition-all duration-300 hover:scale-105 hover:border-purple-500/50 hover:shadow-lg">
         <div className="bg-purple-500/20 p-1.5 md:p-2 rounded-full">
           <Layers className="text-purple-300 w-4 h-4 md:w-6 md:h-6" strokeWidth={1.5} />
-        </div>
-        <div className="flex-grow">
-          <div className="text-lg md:text-xl font-semibold text-purple-200">{featuresCount}</div>
-          <div className="text-[10px] md:text-xs text-gray-400">Fitur Utama</div>
-        </div>
       </div>
     </div>
   );
