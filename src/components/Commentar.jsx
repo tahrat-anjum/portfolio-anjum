@@ -14,8 +14,7 @@ const Comment = memo(({ comment, formatDate, index }) => (
         <div className="flex items-start gap-3 ">
             {comment.profileImage ? (
                 <img
-                    src={comment.profileImage}
-                    alt={`${comment.userName}'s profile`}
+                    src={comment.profileImage
                     className="w-10 h-10 rounded-full object-cover border-2 border-indigo-500/30"
                     loading="lazy"
                 />
