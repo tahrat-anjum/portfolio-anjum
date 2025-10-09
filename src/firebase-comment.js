@@ -8,7 +8,7 @@ const firebaseConfig = {
     authDomain: "web-kelas-tes.firebaseapp.com",
     projectId: "web-kelas-tes",
     storageBucket: "web-kelas-tes.appspot.com",
-    messagingSenderId: "890817433268",
+    messagingSenderId: "",
     appId: "1:890817433268:web:11e5258f8864a6174c11e1"
 };
 
