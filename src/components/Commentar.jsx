@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useRef, useCallback, memo } from 'react';
-import { getDocs, addDoc, collection, onSnapshot, query, orderBy, serverTimestamp } from 'firebase/firestore';
+import { addDoc, collection, onSnapshot, query, orderBy, serverTimestamp } from 'firebase/firestore';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { db, storage } from "../firebase-comment";
 import { MessageCircle, UserCircle2, Loader2, AlertCircle, Send, ImagePlus, X } from 'lucide-react';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-// Single Comment Component
+// Single Comment
 const Comment = memo(({ comment, formatDate }) => (
   <div className="px-4 pt-4 pb-2 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all group hover:shadow-lg hover:-translate-y-0.5">
     <div className="flex items-start gap-3">
@@ -35,7 +35,7 @@ const Comment = memo(({ comment, formatDate }) => (
   </div>
 ));
 
-// Comment Form Component
+// Comment Form
 const CommentForm = memo(({ onSubmit, isSubmitting }) => {
   const [newComment, setNewComment] = useState('');
   const [userName, setUserName] = useState('');
@@ -147,9 +147,7 @@ const CommentForm = memo(({ onSubmit, isSubmitting }) => {
                 <ImagePlus className="w-5 h-5 group-hover:scale-110 transition-transform" />
                 <span>Choose Profile Photo</span>
               </button>
-              <p className="text-center text-gray-400 text-sm mt-2">
-                Max file size: 5MB
-              </p>
+              <p className="text-center text-gray-400 text-sm mt-2">Max file size: 5MB</p>
             </div>
           )}
         </div>
@@ -158,7 +156,8 @@ const CommentForm = memo(({ onSubmit, isSubmitting }) => {
       <button
         type="submit"
         disabled={isSubmitting}
-        data-aos="fade-up" data-aos-duration="1000"
+        data-aos="fade-up"
+        data-aos-duration="1000"
         className="relative w-full h-12 bg-gradient-to-r from-[#6366f1] to-[#a855f7] rounded-xl font-medium text-white overflow-hidden group transition-all duration-300 hover:scale-[1.02] hover:shadow-lg active:scale-[0.98] disabled:opacity-50 disabled:hover:scale-100 disabled:cursor-not-allowed"
       >
         <div className="absolute inset-0 bg-white/20 translate-y-12 group-hover:translate-y-0 transition-transform duration-300" />
@@ -180,7 +179,7 @@ const CommentForm = memo(({ onSubmit, isSubmitting }) => {
   );
 });
 
-// Main Comment Section Component
+// Main Component
 const Komentar = () => {
   const [comments, setComments] = useState([]);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -243,4 +242,13 @@ const Komentar = () => {
     <div className="w-full bg-gradient-to-b from-white/10 to-white/5 rounded-2xl overflow-hidden backdrop-blur-xl shadow-xl" data-aos="fade-up">
       <div className="p-6 border-b border-white/10">
         <div className="flex items-center gap-3">
-          <div className="p-2
+          <div className="p-2 rounded-xl bg-indigo-500/20">
+            <MessageCircle className="w-6 h-6 text-indigo-400" />
+          </div>
+          <h3 className="text-xl font-semibold text-white">
+            Comments <span className="text-indigo-400">({comments.length})</span>
+          </h3>
+        </div>
+      </div>
+
+      <div className="p-6 space-y-6">
